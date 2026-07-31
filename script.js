@@ -8,17 +8,11 @@ const challenges = [
 
 "Find something that surprises you.",
 
-"Find an animal.",
-
-"Find something made of gold.",
-
 "Read one label all the way through.",
 
 "Find your favorite object.",
 
-"Find an object older than 1,000 years.",
-
-"Find something blue.",
+"Find the oldest object in the room.",
 
 "Find an artist you've never heard of.",
 
@@ -28,7 +22,6 @@ const challenges = [
 
 "Find something that makes you smile.",
 
-"Imagine how this object arrived at the Met.",
 
 "Find an object you'd take home."
 
