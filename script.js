@@ -26,7 +26,35 @@ const challenges = [
 "Find an object you'd take home."
 
 ];
+const galleries = [
+    ...range(101, 138),
+    ...range(150, 170),
+    ...range(173, 176),
+    ...range(200, 253),
+    ...range(300, 307),
+    ...range(341, 345),
+    ...range(350, 354),
+    ...range(360, 363),
+    ...range(370, 380),
+    ...range(400, 405),
+    ...range(450, 464),
+    ...range(500, 555),
+    ...range(600, 630),
+    ...range(680, 684),
+    ...range(691, 693),
+    ...range(700, 745),
+    ...range(800, 830),
+    851,
+    852,
+    ...range(950, 960)
+];
 
+function range(start, end) {
+    return Array.from(
+        { length: end - start + 1 },
+        (_, i) => start + i
+    );
+}
 button.addEventListener("click", spin);
 
 function spin(){
@@ -51,7 +79,7 @@ clearInterval(interval);
 gallery.classList.remove("spin");
 
 gallery.textContent =
-Math.floor(Math.random()*864)+100;
+galleries[Math.floor(Math.random()*galleries.length)];
 
 challenge.textContent =
 challenges[Math.floor(Math.random()*challenges.length)];
